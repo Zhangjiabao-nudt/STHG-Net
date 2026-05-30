@@ -1,0 +1,9 @@
+tsgn:
+  'gcn_dims': [1, 64, 128]  # 输入特征维度1，两层GCN
+  'lstm_hidden': 128
+  'pred_steps': 1
+  'aggrs': ['mean', 'sum'] # 'max', 'sum'
+#  'device': 'cuda' if torch.cuda.is_available() else 'cpu'
+  'device': 'gpu'
+  'batch_size': 1
+  'seq_len': 7
